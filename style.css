@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#000000,#0a192f,#00aeff);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    overflow-x:hidden;
+}
+
+.container{
+    width:90%;
+    max-width:800px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(0,174,255,.4);
+    animation:fadeIn 1s ease;
+}
+
+.profile{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #00aeff;
+    margin-bottom:20px;
+    transition:.4s;
+}
+
+.profile:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 30px #00aeff;
+}
+
+h1{
+    color:white;
+    margin-bottom:15px;
+    font-size:40px;
+}
+
+.about{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.btn{
+    text-decoration:none;
+    color:white;
+    padding:12px 25px;
+    border-radius:50px;
+    transition:.4s;
+    font-weight:600;
+}
+
+.youtube{
+    background:#ff0000;
+}
+
+.facebook{
+    background:#1877f2;
+}
+
+.tiktok{
+    background:#111;
+}
+
+.whatsapp{
+    background:#25d366;
+}
+
+.gmail{
+    background:#ea4335;
+}
+
+.btn:hover{
+    transform:translateY(-5px) scale(1.05);
+}
+
+footer{
+    margin-top:20px;
+    color:white;
+    padding:15px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.logo.png img{
+    width:150px;
+    height:150px;
+}
